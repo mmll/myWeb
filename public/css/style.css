@@ -28,3 +28,6 @@ div.imgContainer >img{
 	border-radius: 130px;
 	border: solid 7px #F3EFE0;
 }
+.container{
+	padding: 0 40px 80px 40px;
+}

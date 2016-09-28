@@ -4,5 +4,4 @@ $(document).ready(function(){
 
 function applyHeight(){
 	$('.jumbotron').css({height:($(window).height())+"px"});
-	$('.mainInfo').css({height:($(window).height())+"px"});
 }
