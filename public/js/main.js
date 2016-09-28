@@ -3,6 +3,6 @@ $(document).ready(function(){
 });
 
 function applyHeight(){
-	$('.topPage').css({height:($(window).height())+"px"});
+	$('.jumbotron').css({height:($(window).height())+"px"});
 	$('.mainInfo').css({height:($(window).height())+"px"});
 }
