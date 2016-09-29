@@ -18,7 +18,6 @@ div.col-md-4> h3{
 	color: #22A39F;
 }
 .imgContainer{
-	width: 300px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -29,5 +28,17 @@ div.imgContainer >img{
 	border: solid 7px #F3EFE0;
 }
 .container{
-	padding: 0 40px 80px 40px;
+	padding: 40px 180px;
+}
+li{
+	text-decoration: none;
+}
+.spanTitle{
+	margin-right:40px;
+}
+.glyphicon.glyphicon-star-empty,.glyphicon {
+	float:right;
+}
+li{
+	list-style-type: none;
 }
