@@ -34,11 +34,27 @@ li{
 	text-decoration: none;
 }
 .spanTitle{
-	margin-right:40px;
+	margin-right: 40px;
 }
 .glyphicon.glyphicon-star-empty,.glyphicon {
-	float:right;
+	float: right;
+	color: #DFE0E0;
+	font-size: 12px;
+	padding-left: 4px;
+}
+.glyphicon.glyphicon-star{
+	color: #22A39F;
 }
 li{
 	list-style-type: none;
+}
+.foot{
+	background-color: #434242;
+}
+.foot h2,.contactInfo i,.contactInfo span{
+	color: white;
+}
+.contactInfo a:hover,.contactInfo span:hover{
+	color: gray;
+	text-decoration: none;
 }
