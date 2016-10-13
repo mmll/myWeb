@@ -1,3 +1,4 @@
+
 var technical = [
 	{key:"JavaScript",value:5},
 	{key:"HTML",value:5},
@@ -13,15 +14,39 @@ var language = [
 	{key:"Chiness",value:5},
 	{key:"English",value:4}];
 
+var intro = ['I am a front-end enigneerer,',
+	'and a fast learner,',
+	'passionate about life and work.',
+	"And I'm on the way to become a more professional enigneerer.",
+	'Twenty-four years ago,',
+	'I was born in Shanghai,',
+	'I really love this charming city.',
+	"Now I am ready for exciting life's journey."];
+
 $(document).ready(function(){
 	applyHeight();
 	setSkill();
+	showIntro();
 });
 
 function applyHeight(){
 	$('.jumbotron').css({height:($(window).height())+"px"});
 }
-
+function showIntro(){
+	var obj = $('#introPanel')[0];
+	var curIndex = -1;
+	var intervalID = setInterval(function(){
+		++curIndex;
+		if(curIndex >= intro.length-1){
+			clearInterval(intervalID);
+		}
+		obj.classList.remove('introPanelFade');
+		setTimeout(function(){
+			obj.innerHTML = intro[curIndex];
+			obj.classList.add('introPanelFade');
+		},2000) 
+	},4000)
+}
 function setSkill(){
 	for(var i=0; i<technical.length;i++){
 		var string = "<li><span class='spanTitle'>"+technical[i].key+"</span>";
@@ -48,3 +73,9 @@ function setSkill(){
 		$("#language").append(string);
 	});
 }
+
+
+
+
+
+

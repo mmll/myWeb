@@ -14,7 +14,7 @@ h2{
 	color: #22A39F;
 	text-align: center;
 }
-div.col-md-4> h3{
+h3{
 	color: #22A39F;
 }
 .imgContainer{
@@ -57,4 +57,106 @@ li{
 .contactInfo a:hover,.contactInfo span:hover{
 	color: gray;
 	text-decoration: none;
+}
+
+.char1,.char2,.char3,.char4,.char5,.char6,.char7,.char8,.char9{
+	animation: 10s showName;
+	animation-fill-mode: forwards;
+	-webkit-animation: 4s showName;
+	-webkit-animation-fill-mode: forwards;
+	visibility: hidden;
+
+}
+.char1{
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+.char2{
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+.char3{
+	-webkit-animation-delay: 0.9s;
+	animation-delay: 0.9s;
+}
+.char4{
+	-webkit-animation-delay: 1.1s;
+	animation-delay: 1.1s;
+}
+.char5{
+	-webkit-animation-delay: 1.3s;
+	animation-delay: 1.3s;
+}
+.char6{
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+.char7{
+	-webkit-animation-delay: 1.7s;
+	animation-delay: 1.7s;
+}
+.char8{
+	-webkit-animation-delay: 1.9s;
+	animation-delay: 1.9s;
+}
+.char9{
+	-webkit-animation-delay: 2.1s;
+	animation-delay: 2.1s;
+}
+.name{
+	font-size: 34px;
+	text-align: center; 
+}
+.infoTitle{
+	font-size: 20px;
+	margin-left: 10%;
+	animation: 0.5s showTitle ease-in;
+	animation-fill-mode: forwards;
+	-webkit-animation: 0.5s showTitle ease-in;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes showName{
+	0% {opacity: 0; visibility: hidden;}
+	10% {opacity: 0;}
+	20% {opacity: 1; visibility: visible;}
+	100% {opacity: 1; visibility: visible;}
+}
+@keyframes showTitle{
+	0% {
+		opacity: 0;
+		top: -20;
+	}
+	100%{
+		opacity: 1;
+		top: 0;
+	}
+}
+
+@-webkit-keyframes nameAni1 {
+  0% {
+    opacity: 0;
+    visibility: hidden; }
+  11% {
+    opacity: 1; }
+  20% {
+    opacity: 1;
+    visibility: visible; }
+  100% {
+    opacity: 1;
+    visibility: visible; } 
+}
+
+#introPanel{
+	font-size: 16px;
+	text-align: center;
+    -webkit-transition: opacity 1.5s;
+  	-moz-transition: opacity 1.5s;
+  	-o-transition: opacity 1.5s;
+  	-ms-transition: opacity 1.5s;       
+  	transition: opacity 1.5s;
+  	opacity: 0;
+}
+#introPanel.introPanelFade{
+	opacity: 1;
 }
