@@ -160,3 +160,93 @@ li{
 #introPanel.introPanelFade{
 	opacity: 1;
 }
+.downBtnIcon{
+	fill: transparent;
+    stroke: white;
+    stroke-width: 3px;
+    -webkit-transition: opacity 0.5s;
+  	-moz-transition: opacity 0.5s;
+  	-o-transition: opacity 0.5s;
+  	-ms-transition: opacity 0.5s;       
+  	transition: opacity 0.5s;
+}
+.downBtnIcon:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+.nav-btn{
+	height:54px;
+	width: 54px;
+	border-radius: 100px;
+	transition:0.14s;
+	display: block;
+	background: url(../image/black-texture.png);
+}
+.nav-btn:hover {
+	cursor: pointer;
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
+    transform: scale(1.07); 
+}
+
+.mainNav{
+	position: absolute;
+}
+ li{
+	width:180px;
+}
+.profile:after, .experience:after, .skill:after{
+	content: '';
+    display: block;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    background-color: #F3EFE0;
+    height: 44px;
+    width: 44px;
+    border-radius: 100px;
+
+}
+.profile:after{
+	content: 'P';
+	font-size: 30px;
+    padding: 2px 13px;
+}
+.experience:after{
+	content: 'E';
+	font-size: 30px;
+    padding: 2px 13px;
+}
+.skill:after{
+	content: 'S';
+    font-size: 30px;
+    padding: 2px 13px;
+}
+.mainInfo{
+	background-color: #F3EFE0;
+}
+.nav-info{
+	background:url(../image/white-texture.png);
+    margin-top: -30px;
+    position: relative;
+    float: right;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin: 5px 10px;
+    top: -40px;
+    border-radius: 30px;
+    color: #F3EFE0;
+    font-size: 20px;
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    -o-transform: translateX(8px);
+    transform: translateX(8px); 
+    opacity: 0;
+}
+.nav-btn:hover .nav-info {
+    opacity: 1; 
+}

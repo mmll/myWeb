@@ -28,9 +28,14 @@ $(document).ready(function(){
 	setSkill();
 	showIntro();
 });
+$('.downBtnIcon').click(function(){
 
+});
 function applyHeight(){
 	$('.jumbotron').css({height:($(window).height())+"px"});
+	$('.downBtn').css({top:($(window).height())-100+"px",
+		left:($(window).width())/2-40+'px',
+		position:"absolute"});
 }
 function showIntro(){
 	var obj = $('#introPanel')[0];
