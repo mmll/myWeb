@@ -22,20 +22,38 @@ var intro = ['I am a front-end enigneerer,',
 	'I was born in Shanghai,',
 	'I really love this charming city.',
 	"Now I am ready for exciting life's journey."];
+var currentPage = 'profile';
 
 $(document).ready(function(){
 	applyHeight();
 	setSkill();
 	showIntro();
 });
-$('.downBtnIcon').click(function(){
 
-});
 function applyHeight(){
 	$('.jumbotron').css({height:($(window).height())+"px"});
+	$('.mainContainer').css({height:($(window).height())+"px"});
+	$('.profile').css({height:($(window).height())+"px"});
+	$('.experience').css({height:($(window).height())+"px"});
+	$('.ability').css({height:($(window).height())+"px"});
 	$('.downBtn').css({top:($(window).height())-100+"px",
 		left:($(window).width())/2-40+'px',
 		position:"absolute"});
+}
+function animatePage(page){
+	var nextPage = page;
+	if(nextPage == currentPage){
+		return;
+	}
+	else{
+		$("."+currentPage)[0].className = currentPage + ' pt-page-rotateFall';
+		window.setTimeout(function(){
+			$("."+nextPage)[0].className = nextPage + ' pt-page-scaleUp';
+			$("."+currentPage)[0].style.display = 'none';
+			$("."+nextPage)[0].style.display = 'block';
+			currentPage = nextPage;
+		},500);
+	}
 }
 function showIntro(){
 	var obj = $('#introPanel')[0];
