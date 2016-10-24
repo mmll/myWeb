@@ -48,11 +48,11 @@ function animatePage(page){
 	else{
 		$("."+currentPage)[0].className = currentPage + ' pt-page-rotateFall';
 		window.setTimeout(function(){
-			$("."+nextPage)[0].className = nextPage + ' pt-page-scaleUp';
 			$("."+currentPage)[0].style.display = 'none';
 			$("."+nextPage)[0].style.display = 'block';
+			$("."+nextPage)[0].className = nextPage + ' pt-page-scaleUp';
 			currentPage = nextPage;
-		},500);
+		},800);
 	}
 }
 function showIntro(){
@@ -68,7 +68,7 @@ function showIntro(){
 			obj.innerHTML = intro[curIndex];
 			obj.classList.add('introPanelFade');
 		},2000) 
-	},4000)
+	},2000)
 }
 function setSkill(){
 	for(var i=0; i<technical.length;i++){

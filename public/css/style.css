@@ -3,8 +3,14 @@ html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; he
 	background-color: #22A39F;
 	color: white;
 }
-.experience{
+.experience,{
 	background-color: #F3EFE0;
+}
+.profile{
+	background-color: green;
+}
+.ability{
+	background-color: black;
 }
 h1,h4{
 	color: white;
@@ -262,12 +268,11 @@ li{
 	-moz-animation: rotateFall 1s both ease-in;
 	transform-origin: 0% 0%;
 	animation: rotateFall 1s both ease-in;
+	z-index: 9999;
 }
 .pt-page-scaleUp {
 	display: block;
-	-webkit-animation: scaleUp .7s ease both;
-	-moz-animation: scaleUp .7s ease both;
-	animation: scaleUp .7s ease both;
+	
 }
 @keyframes rotateFall {
 	0% { transform: rotateZ(0deg); }
