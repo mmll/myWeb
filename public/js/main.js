@@ -25,11 +25,20 @@ var intro = ['I am a front-end enigneerer,',
 var currentPage = 'profile';
 
 $(document).ready(function(){
+	showIntro();
 	applyHeight();
 	setSkill();
-	showIntro();
 });
+function collapseNavbar() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+}
 
+$(window).scroll(collapseNavbar);
+$(document).ready(collapseNavbar);
 function applyHeight(){
 	$('.jumbotron').css({height:($(window).height())+"px"});
 	$('.mainContainer').css({height:($(window).height())+"px"});
@@ -40,7 +49,7 @@ function applyHeight(){
 		left:($(window).width())/2-40+'px',
 		position:"absolute"});
 }
-function animatePage(page){
+/*function animatePage(page){
 	var nextPage = page;
 	if(nextPage == currentPage){
 		return;
@@ -54,10 +63,14 @@ function animatePage(page){
 			currentPage = nextPage;
 		},800);
 	}
-}
+}*/
 function showIntro(){
 	var obj = $('#introPanel')[0];
-	var curIndex = -1;
+	setTimeout(function(){
+			obj.innerHTML = intro[0];
+			obj.classList.add('introPanelFade');
+		},2700) 
+	var curIndex = 0;
 	var intervalID = setInterval(function(){
 		++curIndex;
 		if(curIndex >= intro.length-1){
@@ -67,8 +80,8 @@ function showIntro(){
 		setTimeout(function(){
 			obj.innerHTML = intro[curIndex];
 			obj.classList.add('introPanelFade');
-		},2000) 
-	},2000)
+		},2300) 
+	},3800);
 }
 function setSkill(){
 	for(var i=0; i<technical.length;i++){
