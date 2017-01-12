@@ -5,26 +5,24 @@ html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; he
 	margin-bottom: 0;
 	background-size: 100%;
 }
-.experience,{
-	background-color: url(../image/bg4.jpg) no-repeat center center scroll;
+.experience{
+	background: url(../image/bg4.jpg) no-repeat center center scroll;
+	background-size: 100%;
 }
 .profile{
-	background-color: url(../image/bg3.jpg) no-repeat center center scroll;
+	background: url(../image/bg3.jpg) no-repeat center center scroll;
+	background-size: 100%;
 }
 .ability{
-	background-color: url(../image/bg5.jpg) no-repeat center center scroll;
+	background: url(../image/bg5.jpg) no-repeat center center scroll;
+	background-size: 100%;
 }
-h1,h4{
+h1,h2,h3,h4{
 	color: white;
 	text-align: center;
+	font-weight: bold;
 }
-h2{
-	color: #22A39F;
-	text-align: center;
-}
-h3{
-	color: #22A39F;
-}
+
 .imgContainer{
 	overflow: hidden;
 	margin: 0 auto;
