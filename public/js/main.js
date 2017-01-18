@@ -1,4 +1,3 @@
-
 var technical = [
 	{key:"JavaScript",value:5},
 	{key:"HTML",value:5},
@@ -28,7 +27,14 @@ $(document).ready(function(){
 	showIntro();
 	applyHeight();
 	setSkill();
+	setFood();
 });
+function setFood(){
+	$(".owl-carousel").owlCarousel({
+    items : 6,
+    nav: true
+  });
+}
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");

@@ -1,11 +1,14 @@
 var http = require('http');
 var express = require('express');
 var app = express();
+/*global.jQuery = global.$ = require('jquery'); 
+require('bootstrap');*/
 
-app.use(express.static('public'));
+app.use(express.static('public/'));
+app.use('/modules',express.static('node_modules/'));
 
-app.get('/index.html',function(req,res){
-	res.sendFile('/home/mli1/Deskport/myWeb/myWeb'+"/index.html");
+app.get('/',function(req,res){
+	res.sendFile(__dirname+'/index.html');
 })
 
 var server = app.listen(8081,function(){
