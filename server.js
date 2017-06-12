@@ -1,8 +1,7 @@
 var http = require('http');
 var express = require('express');
 var app = express();
-/*global.jQuery = global.$ = require('jquery'); 
-require('bootstrap');*/
+
 
 app.use(express.static('public/'));
 app.use('/modules',express.static('node_modules/'));

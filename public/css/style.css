@@ -229,7 +229,8 @@ li{
 .navbar-custom{
 	margin-bottom: 0;
 	background: transparent;
-	border: none
+	border: none;
+	box-shadow: none;
 }
 .navbar-default.navbar-custom .navbar-nav>li>a{
 	color: white;
@@ -240,9 +241,10 @@ li{
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 	cursor: auto;
 }
-a{
+a，a:hover, .navbar-header a{
 	color:white;
-	text-decoration: none
+	text-decoration: none;
+	margin-left: 6px;
 }
 .navbar-custom.top-nav-collapse {
     padding: 0;
@@ -261,4 +263,7 @@ a{
 }
 .owl-carousel{
 	display: block;
+}
+.jumbotron .navbar-right{
+	margin-right:0;
 }
