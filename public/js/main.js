@@ -46,14 +46,14 @@ function collapseNavbar() {
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 function applyHeight(){
-	$('.jumbotron').css({height:($(window).height())+"px"});
+/*	$('.jumbotron').css({height:($(window).height())+"px"});
 	$('.mainContainer').css({height:($(window).height())+"px"});
 	$('.profile').css({height:($(window).height())+"px"});
 	$('.experience').css({height:($(window).height())+"px"});
 	$('.ability').css({height:($(window).height())+"px"});
 	$('.downBtn').css({top:($(window).height())-100+"px",
 		left:($(window).width())/2-40+'px',
-		position:"absolute"});
+		position:"absolute"});*/
 }
 /*function animatePage(page){
 	var nextPage = page;
