@@ -17,7 +17,6 @@ var intro = ['I am a front-end enigneerer,',
 	'and a fast learner,',
 	'passionate about life and work.',
 	"And I'm on the way to become a more professional enigneerer.",
-	'Twenty-four years ago,',
 	'I was born in Shanghai,',
 	'I really love this charming city.',
 	"Now I am ready for exciting life's journey."];

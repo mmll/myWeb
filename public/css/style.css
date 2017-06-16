@@ -38,6 +38,9 @@ h1,h2,h3,h4{
 .imgContainer{
 	overflow: hidden;
 	margin: 0 auto;
+    bottom: 0;
+    left: 45%;
+    position: absolute;
 }
 div.imgContainer > img{
 	width: 100%;
