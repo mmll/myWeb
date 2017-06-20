@@ -34,13 +34,14 @@ h1,h2,h3,h4{
 	text-align: center;
 	font-weight: bold;
 }
-
+#main .imgContainer{
+	bottom: 0;
+    left: 48%;
+    position: absolute;
+}
 .imgContainer{
 	overflow: hidden;
 	margin: 0 auto;
-    bottom: 0;
-    left: 45%;
-    position: absolute;
 }
 div.imgContainer > img{
 	width: 100%;
